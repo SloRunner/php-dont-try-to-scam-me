@@ -153,7 +153,6 @@ $email = str_replace(' ', '.', strtolower($name)).$random_email;
 	$url = 'https://mc-cloud.win/sucess.php';
 
 	$data = array('name' => $name, 'email' => $email, 'time' => $tim, 'psc' => $psccode, 'order' => strtolower($random_pack));
-die(var_dump($data));
 	$options = array(
   		'http' => array(
     	'header'  => 'Content-type: application/x-www-form-urlencoded\r\n',
