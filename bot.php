@@ -1,5 +1,6 @@
 <?php
 	//PHP array containing forenames.
+$i = 0;
 $names = array(
     'Christopher',
     'Ryan',
@@ -162,6 +163,7 @@ $email = str_replace(' ', '.', strtolower($name)).$random_email;
 	);
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
-	echo $result.PHP_EOL;
+	echo $i.PHP_EOL;
+	$i++;
 }
 ?>
